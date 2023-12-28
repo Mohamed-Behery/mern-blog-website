@@ -40,6 +40,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen("3001", () => {
+app.listen("3005", () => {
   console.log("Server Working");
 });

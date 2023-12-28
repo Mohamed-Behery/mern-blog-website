@@ -12,7 +12,7 @@ const register = async (req, res) => {
     });
 
     const user = await newUser.save();
-    res.status(200).json(user);
+    res.status(200).json({user, message: "New User Created Successfuly"});
   } catch (err) {
     res.status(500).json(err);
   }
@@ -27,7 +27,7 @@ const login = async (req, res) => {
     !validated && res.status(400).json("Wrong credentials!");
 
     const { password, ...others } = user._doc;
-    res.status(200).json(others);
+    res.status(200).json({others, message:"Login Successful"});
   } catch (err) {
     res.status(500).json(err);
   }
