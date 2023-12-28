@@ -20,7 +20,6 @@ function connect() {
 }
 connect();
 
-
 // multer is a library for basic image upload, but we can use firebase or aws in big projects
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
