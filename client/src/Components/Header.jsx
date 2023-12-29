@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 // import Link from "react-router-dom";
 
@@ -11,7 +12,7 @@ const Left = styled.div``;
 const Middle = styled.div``;
 const Right = styled.div``;
 const Logo = styled.img``;
-const Link = styled.a``;
+const ThemeSwitcher = styled.span``;
 
 const Header = () => {
   return (
@@ -21,15 +22,14 @@ const Header = () => {
           <Logo src=""></Logo>
         </Left>
         <Middle>
-          <Link href="#">Home</Link>
-          <Link href="#">Saved</Link>
-          <Link href="#">Write</Link>
-          <Link href="#">Logout</Link>
+          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/write">Write</NavLink>
+          {/* <NavLink to="/logout">Logout</NavLink> */}
         </Middle>
         <Right>
-          <Link href="#">Register</Link>
-          <Link href="#">Login</Link>
-          <Link href="#">theme</Link>
+          <NavLink to="/register">Register</NavLink>
+          <NavLink to="/login">Login</NavLink>
+          <ThemeSwitcher>theme</ThemeSwitcher>
         </Right>
       </Wrapper>
     </Container>
