@@ -15,6 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" exact element={Home()} />
+        <Route path="/home" exact element={Home()} />
         <Route path="/write" element={Write()} />
         <Route path="/post/:postId" element={Post()} />
         <Route path="/register" element={Register()} />
