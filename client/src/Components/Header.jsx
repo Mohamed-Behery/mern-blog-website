@@ -14,7 +14,7 @@ const Right = styled.div``;
 const Logo = styled.img``;
 const ThemeSwitcher = styled.span``;
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
       <Wrapper>
@@ -24,12 +24,14 @@ const Header = () => {
         <Middle>
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/write">Write</NavLink>
+          <ThemeSwitcher onClick={() => setDarkMode(!darkMode)}>
+            {darkMode ? "Dark" : "Light"}
+          </ThemeSwitcher>
           {/* <NavLink to="/logout">Logout</NavLink> */}
         </Middle>
         <Right>
           <NavLink to="/register">Register</NavLink>
           <NavLink to="/login">Login</NavLink>
-          <ThemeSwitcher>theme</ThemeSwitcher>
         </Right>
       </Wrapper>
     </Container>
