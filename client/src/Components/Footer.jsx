@@ -8,7 +8,7 @@ const Link = styled.a``;
 const Footer = () => {
   return (
     <Container>
-      <Copyrights>All Rights Reserverd &#169; 2024 </Copyrights>
+      <Copyrights>All Rights Reserverd - Beacon &#169; 2024 </Copyrights>
       <Social>
         <Link>Facebook</Link>
         <Link>Instagram</Link>

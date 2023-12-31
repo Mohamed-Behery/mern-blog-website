@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const Left = styled.div``;
 const Middle = styled.div``;
 const Right = styled.div``;
-const Logo = styled.img``;
+const Logo = styled.h1``;
 const ThemeSwitcher = styled.span``;
 
 const Header = ({ darkMode, setDarkMode }) => {
@@ -19,7 +19,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo src="" />
+          <Logo>Beacon</Logo>
         </Left>
         <Middle>
           <NavLink to="/home">Home</NavLink>

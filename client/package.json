@@ -1,5 +1,5 @@
 {
-  "name": "01_lama-dev-with-dashboard",
+  "name": "beacon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
