@@ -3,9 +3,9 @@ import PostCard from "./PostCard";
 
 const Container = styled.div``;
 const Options = styled.div``;
-const Filter = styled.div``;
-const Sort = styled.div``;
-// const ReadMore = styled.div``;
+const Filter = styled.span``;
+const Sort = styled.span``;
+const ReadMore = styled.span``;
 const PostsCards = styled.div``;
 
 const Posts = () => {
@@ -14,7 +14,7 @@ const Posts = () => {
       <Options>
         <Filter>Filter</Filter>
         <Sort>Sort</Sort>
-        {/* <ReadMore>ReadMore</ReadMore> */}
+        <ReadMore>ReadMore</ReadMore>
         <PostsCards>
           <PostCard />
           <PostCard />
