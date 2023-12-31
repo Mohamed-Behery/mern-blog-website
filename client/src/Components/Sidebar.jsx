@@ -31,6 +31,7 @@ const Sidebar = () => {
         <TrendingPost />
         <TrendingPost />
       </Trending>
+      <Hr />
       {location.pathname === "/post" && (
         <SharePost>
           <Title>Share This Post</Title>

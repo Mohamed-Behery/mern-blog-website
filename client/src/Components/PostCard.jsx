@@ -17,7 +17,7 @@ const Content = styled.p``;
 const PostCard = () => {
   return (
     <Container>
-      <PostImage></PostImage>
+      <PostImage src="" />
       <Title to="/post">Title</Title>
       <Date>1/1/2001</Date>
       <Author>Mohamed</Author>

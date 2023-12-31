@@ -19,7 +19,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo src=""></Logo>
+          <Logo src="" />
         </Left>
         <Middle>
           <NavLink to="/home">Home</NavLink>
