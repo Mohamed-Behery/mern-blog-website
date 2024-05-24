@@ -1,27 +1,49 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Container = styled.div``;
-const PostImage = styled.img``;
+const Container = styled.div`
+  margin: 16px 0;
+  border-radius: 8px;
+  max-width: 380px;
+  background-color: ${({ theme }) => theme.neutral};
+`;
+const PostImage = styled.img`
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+`;
+const Details = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 0;
+`;
 const Title = styled(Link)`
-  color: inherit;
-  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
 `;
 const Date = styled.span``;
 const Author = styled.span``;
 const Category = styled.span``;
-const Content = styled.p``;
+const Content = styled.p`
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
 
 const PostCard = () => {
   return (
     <Container>
-      <PostImage src="" />
+      <PostImage src="images/post.jpg" />
       <Title to="/post">Title</Title>
-      <Date>1/1/2001</Date>
-      <Author>Mohamed</Author>
-      <Category>Tech</Category>
+      <Details>
+        <Author>Mohamed</Author>
+        <Date>1/1/2001</Date>
+        <Category>Tech</Category>
+      </Details>
       <Content>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita
         necessitatibus aliquam beatae voluptatem amet delectus magni dolores

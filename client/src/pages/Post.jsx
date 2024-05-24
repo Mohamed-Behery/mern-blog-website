@@ -3,12 +3,15 @@ import Recommendations from "../Components/Recommendations";
 
 const Container = styled.div``;
 const PostDetails = styled.div``;
-const Image = styled.img``;
+const Image = styled.img`
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+`;
 const Title = styled.h1`
-  color: inherit;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 32px;
 `;
 const Date = styled.span``;
 const Author = styled.span``;
@@ -16,19 +19,25 @@ const Category = styled.span``;
 const Update = styled.span``;
 const Delete = styled.span``;
 const Content = styled.p``;
-const Hr = styled.hr``;
+const Hr = styled.hr`
+  margin: 8px 0;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 1px;
+`;
 
 const Post = () => {
   return (
     <Container>
       <PostDetails>
-        <Image src="" />
+        <Image src="images/post.jpg" />
         <Title>Title</Title>
+        <Hr />
         <Date>1/1/2001</Date>
         <Author>Mohamed</Author>
         <Category>Tech</Category>
         <Update>Update</Update>
         <Delete>Delete</Delete>
+        <Hr />
         <Content>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
           expedita necessitatibus aliquam beatae voluptatem amet delectus magni

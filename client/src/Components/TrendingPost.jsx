@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+  margin: 8px 0;
+`;
 const PostImage = styled.img``;
 const Title = styled(Link)`
-  color: inherit;
-  text-decoration: none;
   font-weight: bold;
 `;
 const Content = styled.p``;
