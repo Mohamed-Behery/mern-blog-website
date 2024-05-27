@@ -13,6 +13,9 @@ const PostImage = styled.img`
   object-fit: cover;
   border-radius: 8px;
 `;
+const PostText = styled.div`
+  padding: 8px 16px;
+`;
 const Details = styled.div`
   display: flex;
   justify-content: space-between;
@@ -38,17 +41,19 @@ const PostCard = () => {
   return (
     <Container>
       <PostImage src="images/post.jpg" />
-      <Title to="/post">Title</Title>
-      <Details>
-        <Author>Mohamed</Author>
-        <Date>1/1/2001</Date>
-        <Category>Tech</Category>
-      </Details>
-      <Content>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita
-        necessitatibus aliquam beatae voluptatem amet delectus magni dolores
-        quam officia? Rerum fugiat
-      </Content>
+      <PostText>
+        <Title to="/post">Title</Title>
+        <Details>
+          <Author>Mohamed</Author>
+          <Date>1/1/2001</Date>
+          <Category>Laptop</Category>
+        </Details>
+        <Content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          expedita necessitatibus aliquam beatae voluptatem amet delectus magni
+          dolores quam officia? Rerum fugiat
+        </Content>
+      </PostText>
     </Container>
   );
 };

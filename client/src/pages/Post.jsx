@@ -13,6 +13,12 @@ const Image = styled.img`
 const Title = styled.h1`
   font-size: 32px;
 `;
+
+const PostInfo = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
 const Date = styled.span``;
 const Author = styled.span``;
 const Category = styled.span``;
@@ -32,11 +38,13 @@ const Post = () => {
         <Image src="images/post.jpg" />
         <Title>Title</Title>
         <Hr />
-        <Date>1/1/2001</Date>
-        <Author>Mohamed</Author>
-        <Category>Tech</Category>
-        <Update>Update</Update>
-        <Delete>Delete</Delete>
+        <PostInfo>
+          <Date>1/1/2001</Date>
+          <Author>Mohamed</Author>
+          <Category>Laptop</Category>
+          <Update>Update</Update>
+          <Delete>Delete</Delete>
+        </PostInfo>
         <Hr />
         <Content>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
