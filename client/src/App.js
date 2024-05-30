@@ -68,7 +68,9 @@ function App() {
               <Route path="/profile" element={Profile()} />
             </Routes>
           </MainContent>
-          {location.pathname !== "/write" && <Sidebar />}
+          {location.pathname !== "/write" &&
+            location.pathname !== "/register" &&
+            location.pathname !== "/login" && <Sidebar />}
         </Wrapper>
         <Footer />
       </Container>
